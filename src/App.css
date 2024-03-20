@@ -301,6 +301,7 @@ ul li {
 }
 
 .content-about {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,10 +309,12 @@ ul li {
 }
 
 .image-container-about {
+  text-align: center;
   margin-top: 25px; /* Adjust margin as needed */
 }
 
 .image-container-about img {
+  text-align: center;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);;
   max-width: 60%;
@@ -322,17 +325,20 @@ ul li {
 }
 
 .text-container-about {
+  text-align: center;
   margin-top: 5px; /* Adjust margin as needed */
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.884);
 }
 
 .text-container-about h1 {
   font-size: 24px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 .text-container-about p {
   font-size: 16px;
+  text-align: center;
   margin-left: 8px;
   margin-right: 8px;
   line-height: 1.3;
