@@ -201,10 +201,10 @@ body{
 }
 p {
   display: inline;
-  float: left;
+  float: center;
   margin: 0;
 }
-ul {
+.textUl {
   margin-top: 0;
   padding-left: 50px;
   text-align: left;
@@ -214,7 +214,7 @@ ul {
   -moz-animation: 6s linear 0s normal none infinite change;
   -o-animation: 6s linear 0s normal none infinite change;
 }
-ul li {
+.textUl .textLi {
   line-height: 40px;
   text-align: center;
   margin: 0;
@@ -255,7 +255,7 @@ ul li {
     margin-top: -40px;
   }
   50% {
-    margin-top: -80px;
+    margin-top: -80px; 
   }
   65% {
     margin-top: -80px;
@@ -305,12 +305,12 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25px; /* Adjust margin as needed */
+  margin-top: 25px;
 }
 
 .image-container-about {
   text-align: center;
-  margin-top: 25px; /* Adjust margin as needed */
+  margin-top: 25px; 
 }
 
 .image-container-about img {
@@ -326,7 +326,7 @@ ul li {
 
 .text-container-about {
   text-align: center;
-  margin-top: 5px; /* Adjust margin as needed */
+  margin-top: 5px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.884);
 }
 

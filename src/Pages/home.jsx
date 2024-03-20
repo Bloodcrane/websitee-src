@@ -13,12 +13,12 @@ const HomePage = () => {
             </header>
             <div class='content'>
                 <div class='visible'>
-                    <ul>
-                        <li>K-pop</li>
-                        <li>Hip hop</li>
-                        <li>Pop</li>
-                        <li>R&B</li>
-                        <li>EDM</li>
+                    <ul className="textUl">
+                        <li className="textLi">K-pop</li>
+                        <li className="textLi">Hip hop</li>
+                        <li className="textLi">Pop</li>
+                        <li className="textLi">R&B</li>
+                        <li className="textLi">EDM</li>
                     </ul>
                 </div>
             </div>
