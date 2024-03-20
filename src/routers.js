@@ -4,6 +4,7 @@ import AboutPage from "./Pages/about"
 
 const router = [
     {
+        index: true,
         element: <HomePage/>,
         path: '/'
     },

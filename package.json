@@ -17,12 +17,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
+    "build": "rimraf ./build && react-scripts build",
+    "lint": "eslint \"**/*.js\"",
+    "predeploy": "npm run build && react-snap",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "npx jest"
   },
   "eslintConfig": {
     "extends": [

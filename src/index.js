@@ -1,16 +1,18 @@
-
 import React from 'react';
-import { createRoot } from 'react-dom';
-import './index.css';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { HashRouter } from 'react-router-dom';
 
-const root = createRoot(document.getElementById('root'));
-root.render(
-  <HashRouter>
+const StrictApp = () => (
+  <React.StrictMode>
     <App />
-  </HashRouter>
+  </React.StrictMode>
 );
 
-reportWebVitals();
+const rootElement = document.getElementById('root');
+
+if (rootElement.hasChildNodes()) {
+  hydrateRoot(rootElement, <StrictApp />);
+} else {
+  const root = createRoot(rootElement);
+  root.render(<StrictApp />);
+}
